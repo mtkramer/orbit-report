@@ -28,6 +28,7 @@ export class AppComponent {
             sat.operational
           ));
         }
+
       }.bind(this));
     }.bind(this));
   }

@@ -11,11 +11,11 @@
     </thead>
     <tbody>
         <tr *ngFor="let sat of satellites">
-            <td>{{sat.name}}</td>
-            <td>{{sat.type}}</td>
-            <td>{{sat.orbitType}}</td>
-            <td>{{sat.launchDate}}</td>
-            <td>{{sat.operational}}</td>
+            <td [class.warning]="sat.shouldShowWarning()">{{sat.name}}</td>
+            <td [class.warning]="sat.shouldShowWarning()">{{sat.type}}</td>
+            <td [class.warning]="sat.shouldShowWarning()">{{sat.orbitType}}</td>
+            <td [class.warning]="sat.shouldShowWarning()">{{sat.launchDate}}</td>
+            <td [class.warning]="sat.shouldShowWarning()">{{sat.operational}}</td>
         </tr>
     </tbody>
 </table>
