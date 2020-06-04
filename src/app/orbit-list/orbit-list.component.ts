@@ -9,6 +9,7 @@ import { Satellite } from '../satellite';
 export class OrbitListComponent implements OnInit {
 
   @Input() satellites: Satellite[];
+  stripe = true;
 
   constructor() { }
 
@@ -25,6 +26,10 @@ export class OrbitListComponent implements OnInit {
       }
       return 0;
     });
+  }
+
+  swapStripe(): void {
+    this.stripe = !this.stripe;
   }
 
 }
